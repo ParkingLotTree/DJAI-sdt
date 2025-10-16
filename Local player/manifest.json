@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Audio Embedder",
+  "version": "1.0",
+  "description": "Embeds raw audio links on GitHub pages.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/**", "https://www.dreamjourneyai.com/app/creation/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*"
+  ]
+}
